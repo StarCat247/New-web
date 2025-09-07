@@ -1,197 +1,412 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="style.css"></noscript>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Star Technologies – Modern Web & App Studio</title>
-<meta name="description" content="Star Technologies – We build beautiful, fast, and scalable websites & apps for companies and shops." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Technologies - Transform Your Digital Future</title>
+    <meta name="description" content="TechFlow empowers businesses through cutting-edge technology solutions, innovative product development, and comprehensive digital transformation strategies.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/meesho.png">
+                    <span class="logo-text">Star Technologies</span>
+                </div>
 
-<header class="section">
-  <div class="brand">
-    <div class="logo" aria-hidden="true">
-      <!-- SVG Logo -->
-      <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Star Technologies logo">
-        <defs>
-          <linearGradient id="g1" x1="0" x2="1">
-            <stop offset="0" stop-color="#2dd4ff"/>
-            <stop offset="1" stop-color="#00e0b8"/>
-          </linearGradient>
-          <linearGradient id="g2" x1="0" x2="1">
-            <stop offset="0" stop-color="#7c3aed"/>
-            <stop offset="1" stop-color="#2dd4ff"/>
-          </linearGradient>
-        </defs>
-        <g transform="translate(10,6) scale(0.8)">
-          <path d="M40 2 L50 30 L80 36 L56 56 L62 88 L40 70 L18 88 L24 56 L0 36 L30 30 Z" fill="url(#g1)" opacity="0.98"/>
-          <path d="M40 12 L48 36 L72 40 L52 56 L58 78 L40 64 L22 78 L28 56 L8 40 L32 36 Z" fill="url(#g2)" opacity="0.18"/>
-        </g>
-      </svg>
-    </div>
-    <div>
-      <div class="company">Star Technologies</div>
-      <div class="tiny">Web & App Studio</div>
-    </div>
-  </div>
+                <!-- Inside your <nav> -->
+                <button id="theme-toggle" class="theme-toggle">
+                    🌙
+                </button>
 
-  <nav aria-label="Primary">
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#work">Work</a>
-    <a href="#contact" class="cta">Contact</a>
-  </nav>
-</header>
 
-<!-- decorative blobs -->
-<div class="blob a" aria-hidden="true"></div>
-<div class="blob b" aria-hidden="true"></div>
 
-<!-- HERO -->
-<section id="home" class="hero section">
-  <div class="hero-left">
-    <div class="kicker">We build digital experiences</div>
-    <h1>Beautiful websites & apps that grow your business – fast.</h1>
-    <p class="lead">Star Technologies crafts pixel-perfect web and mobile apps for shops, enterprises, and product teams. We focus on speed, reliability, and a delightful user experience.</p>
-
-    <div class="actions reveal" style="transition-delay:.15s">
-      <a class="btn-primary" href="#contact">Start a Project</a>
-      <a class="btn-ghost" href="#services">Our Services</a>
-    </div>
-
-    <div style="margin-top:22px; display:flex; gap:16px; flex-wrap:wrap;">
-      <div class="tiny reveal" style="transition-delay:.3s">⚡ Fast delivery • 🚀 Scalable • 🎨 UX-led</div>
-      <div class="tiny reveal" style="transition-delay:.36s">Trusted by stores & startups</div>
-    </div>
-  </div>
-
-  <div class="hero-right">
-    <div class="card-3d" id="tiltCard" aria-hidden="false" role="img" aria-label="3D demo of app preview">
-      <div class="card-inner">
-        <div>
-          <div class="mock-header">
-            <div class="dot"></div>
-            <div class="mock-title"></div>
-          </div>
-          <div class="panel" style="margin-top:12px;">
-            <div style="display:flex;justify-content:space-between;align-items:center;">
-              <div style="font-weight:800">StarShop</div>
-              <div style="font-size:0.9rem; color:rgba(255,255,255,0.6)">v1.2</div>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="screen" style="margin-top:12px;">Live demo – store dashboard</div>
-          </div>
-          <div style="display:flex; gap:10px;">
-            <div class="panel" style="flex:1; min-width:0;">
-              <div style="font-weight:700">Orders</div>
-              <div style="font-size:.9rem; color:rgba(255,255,255,0.7); margin-top:6px">Real-time updates</div>
-            </div>
-            <div class="panel" style="width:110px;">
-              <div style="font-weight:700">AI</div>
-              <div style="font-size:.8rem; color:rgba(255,255,255,0.7); margin-top:6px">Smart suggestions</div>
-            </div>
-          </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
         </div>
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <div style="font-size:.9rem; color:rgba(255,255,255,0.7)">Deployed on cloud • 99.9% uptime</div>
-          <div style="display:flex; gap:8px;">
-            <div style="width:42px;height:42px;border-radius:8px;background:linear-gradient(90deg,#ffb86b,#ff7ab6)"></div>
-            <div style="width:42px;height:42px;border-radius:8px;background:linear-gradient(90deg,#7c3aed,#2dd4ff)"></div>
-          </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2" fill="currentColor"/>
+                        </svg>
+                    </span>
+                    <span>Innovation Meets Excellence</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transform Your<br>
+                    <span class="hero-title-accent">Digital Future</span>
+                </h1>
+                
+                <p class="hero-description">
+                    We empower businesses through cutting-edge technology solutions, innovative product development, and comprehensive digital transformation strategies.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <span>Start Your Project</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">
+                        Learn More
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- SERVICES -->
-<section id="services" class="services-section section">
-  <h2 style="text-align:center; margin-bottom:16px">Our Services</h2>
-  <div class="services-grid">
-    <div class="service-card reveal" data-tilt>
-      <div class="service-icon">W</div>
-      <div style="font-weight:800">Web Development</div>
-      <div style="color:rgba(230,246,247,0.76)">Fast static & dynamic sites, e-commerce, PWAs, and headless setups.</div>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">
+                        About <span class="text-accent">Star Technologies</span>
+                    </h2>
+                    <p class="section-description">
+                        We are a forward-thinking technology consulting firm dedicated to helping businesses navigate the digital landscape and achieve sustainable growth through innovative solutions.
+                    </p>
+                    
+                    <div class="mission-vision">
+                        <div class="mission-card">
+                            <div class="card-icon mission-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="6" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>Our Mission</h3>
+                            <p>To empower businesses with cutting-edge technology solutions that drive innovation and sustainable growth.</p>
+                        </div>
+                        
+                        <div class="vision-card">
+                            <div class="card-icon vision-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <h3>Our Vision</h3>
+                            <p>To be the leading catalyst for digital transformation, shaping the future of technology.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">0+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">0+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">0+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-card">
+                        <img src="images/about image.png" alt="TechFlow team working on innovative solutions">
+                        <div class="image-overlay">
+                            <h4>Expert Team</h4>
+                            <p>Passionate professionals driving innovation</p>
+                            <div class="overlay-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="service-card reveal" data-tilt>
-      <div class="service-icon">A</div>
-      <div style="font-weight:800">Mobile Apps</div>
-      <div style="color:rgba(230,246,247,0.76)">Native & cross-platform apps – clean UI, offline support, smooth animations.</div>
-    </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Our <span class="text-accent">Services</span>
+                </h2>
+                <p class="section-description">
+                    We offer comprehensive technology solutions tailored to your business needs, from strategic consulting to full-scale product development.
+                </p>
+            </div>
+            
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
 
-    <div class="service-card reveal" data-tilt>
-      <div class="service-icon">UX</div>
-      <div style="font-weight:800">UX & Design</div>
-      <div style="color:rgba(230,246,247,0.76)">User research, prototypes, and polished visual systems that convert.</div>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="text-accent">Projects</span>
+                </h2>
+                <p class="section-description">
+                    Explore our portfolio of successful projects that showcase our expertise in delivering innovative technology solutions.
+                </p>
+            </div>
+            
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
 
-    <div class="service-card reveal" data-tilt>
-      <div class="service-icon">☁️</div>
-      <div style="font-weight:800">Cloud & DevOps</div>
-      <div style="color:rgba(230,246,247,0.76)">Scalable infra, CI/CD, monitoring, and cost optimizations.</div>
-    </div>
-  </div>
-</section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Client <span class="text-accent">Testimonials</span>
+                </h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what our clients have to say about working with TechFlow.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
 
-<!-- WORK -->
-<section id="work" class="section" style="padding:18px 56px; max-width:1200px; margin:0 auto 40px">
-  <h2 style="margin-bottom:18px; color:#e6f6f7">Selected Work</h2>
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px">
-    <div class="panel reveal" style="display:flex; gap:14px; align-items:center;">
-      <div style="width:110px;height:80px;border-radius:12px;background:linear-gradient(90deg,#00e0b8,#2dd4ff)"></div>
-      <div>
-        <div style="font-weight:800">LocalShop – eCommerce</div>
-        <div class="tiny">Custom store, POS integration, 2x conversion uplift.</div>
-      </div>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Get In <span class="text-accent">Touch</span>
+                </h2>
+                <p class="section-description">
+                    Ready to transform your business with cutting-edge technology? Let's discuss your project and explore how we can help you achieve your goals.
+                </p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3>Send us a message</h3>
+                    
+                    <div id="successMessage" class="success-message hidden">
+                        <span class="success-icon">✓</span>
+                        <span>Message sent successfully!</span>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@company.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span id="submitText">Send Message</span>
+                            <span class="btn-arrow">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2" fill="currentColor"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon email-icon">
+                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/>
+                                    <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">starcattechnologies@gmail.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon phone-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+91 8682932050</div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon location-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="contact-label">Office</div>
+                                <div class="contact-value">123 Innovation Drive<br>San Francisco, CA 94105</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-card">
+                        <h3>Find Us</h3>
+                        <div class="map-placeholder">
+                            <div class="map-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="2"/>
+                                    <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="map-text">Interactive Map</div>
+                            <div class="map-location">San Francisco, CA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="panel reveal" style="display:flex; gap:14px; align-items:center;">
-      <div style="width:110px;height:80px;border-radius:12px;background:linear-gradient(90deg,#7c3aed,#2dd4ff)"></div>
-      <div>
-        <div style="font-weight:800">DeliveryGo – Mobile App</div>
-        <div class="tiny">Realtime tracking, offline resilience, and intuitive UX.</div>
-      </div>
-    </div>
-  </div>
-</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">TechFlow</h3>
+                    <p>Transforming businesses through innovative technology solutions and digital excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77 5.44 5.44 0 0 0 3.5 9.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 21.13V25"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2"/>
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tech Consulting</a></li>
+                        <li><a href="#services">Product Development</a></li>
+                        <li><a href="#services">Digital Solutions</a></li>
+                        <li><a href="#services">Innovation Strategy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>starcattechnologies@gmail.com</li>
+                        <li>+91 8682932050</li>
+                        <li>123 Innovation Drive<br>San Francisco, CA 94105</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechFlow. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="section" style="padding:28px 56px; max-width:900px; margin:0 auto 60px">
-  <h2>Let's build something</h2>
-  <p class="tiny">Tell us about your project and we’ll get back within 24 hours.</p>
-
-  <!-- Contact Form -->
-  <form id="contactForm" action="https://formspree.io/f/meolqlve" method="POST" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px" >
-    <input id="name" name="name" required placeholder="Your name" />
-    <input id="email" name="email" required type="email" placeholder="Email" />
-    <textarea id="message" name="message" required placeholder="Describe your project"
-      style="grid-column:1/-1; min-height:120px;"></textarea>
-    <button type="submit" class="btn-primary" style="grid-column:1/-1;">
-      ✉️ Send Email
-    </button>
-  </form>
-  <div id="formStatus" style="margin:12px 0 0 0;font-size:1rem;"></div>
-
-  <!-- Direct Contact -->
-  <div style="margin-top:20px; text-align:center;">
-    <p>Or reach us directly:</p>
-    <p>
-      📧 <a href="mailto:starcattechnologies@gmail.com">starcattechnologies@gmail.com</a><br>
-      📞 <a href="tel:+917708840969">+91 77088 40969</a>
-    </p>
-  </div>
-</section>
-
-<footer class="section">
-  <div style="max-width:1100px;margin:0 auto; display:flex;gap:14px; align-items:center; justify-content:space-between; flex-wrap:wrap">
-    <div>© <strong>Star Technologies</strong> – We make apps people love.</div>
-    <div class="tiny">Built with ❤️ – Performance & accessibility in mind</div>
-  </div>
-</footer>
-
-<script src="script.js" defer></script>
-
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
