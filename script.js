@@ -109,7 +109,7 @@ const testimonialsData = [
         id: 1,
         clientName: "Sarah Johnson",
         clientPhoto: "images/Sarah Johnson.png",
-        quote: "TechFlow transformed our entire digital infrastructure. Their expertise and dedication to our project was exceptional. We saw a 300% increase in efficiency within the first quarter.",
+        quote: "Star Technologies transformed our entire digital infrastructure. Their expertise and dedication to our project was exceptional. We saw a 300% increase in efficiency within the first quarter.",
         clientCompany: "InnovateCorp",
         rating: 5
     },
@@ -117,7 +117,7 @@ const testimonialsData = [
         id: 2,
         clientName: "Michael Chen",
         clientPhoto: "https://static.wixstatic.com/media/12d367_71ebdd7141d041e4be3d91d80d4578dd~mv2.png?id=client-michael",
-        quote: "Working with TechFlow was a game-changer for our startup. They delivered a world-class product that exceeded our expectations and helped us secure Series A funding.",
+        quote: "Working with Star Techologies was a game-changer for our startup. They delivered a world-class product that exceeded our expectations and helped us secure Series A funding.",
         clientCompany: "StartupXYZ",
         rating: 5
     },
@@ -125,7 +125,7 @@ const testimonialsData = [
         id: 3,
         clientName: "Emily Rodriguez",
         clientPhoto: "images/Emily Rodriguez.png",
-        quote: "The team at TechFlow is incredibly talented and professional. They understood our vision perfectly and brought it to life with cutting-edge technology solutions.",
+        quote: "The team at Star Technologies is incredibly talented and professional. They understood our vision perfectly and brought it to life with cutting-edge technology solutions.",
         clientCompany: "TechVentures",
         rating: 5
     }
@@ -440,5 +440,6 @@ themeToggle.addEventListener("click", () => {
     localStorage.setItem("theme", "dark");
   }
 });
+
 
 
